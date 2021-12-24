@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+html {
+  max-width: 100%;
   min-height: 100vh;
+  background-image: linear-gradient(-225deg, #FFE6FA 0%, #fdf2cd 100%);
+  font-family: "Cabin", sans-serif;
+}
+
+.search-form {
+  min-height: 10vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.search-bar {
+  width: 50%;
+  border: none;
+  padding: 10px;
+  border-radius: 10px 0px 0px 10px;
+  outline: none;
+}
+
+.search-button {
+  background-color: gray;
+  border: none;
+  padding: 10px 20px;
   color: white;
+  border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.search-button:hover {
+  background-color: lightgray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 50%;
+  background-color: #FFFFFF;
+  display: grid;
+  place-items: center;
+  opacity: 0.9;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.ingredients-list {
+  list-style-type: none;
+  text-align: center;
+  width: 80%;
+}
+
+.recipe-img {
+    border-radius: 40px;
+}
+
+.recipe-inf p {
+  text-align: center;
+  margin: 10px;
+}
+
+@media (max-width: 600px) {
+  .ingredients-list {
+    width: 90%;
   }
 }
