@@ -29,10 +29,6 @@ html {
   cursor: pointer;
 }
 
-.search-button:hover {
-  background-color: lightgray;
-}
-
 .container {
   display: flex;
   justify-content: center;
@@ -63,8 +59,24 @@ html {
   margin: 10px;
 }
 
+ul {
+  padding: 0
+}
+
 @media (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .recipe-img {
+    width: 80%;
+  }
+
   .ingredients-list {
-    width: 90%;
+    width: 80%;
   }
 }
