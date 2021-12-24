@@ -35,6 +35,19 @@ function App() {
 
   return (
     <div className="App">
+      <h1>
+        <span>R</span>
+        <span>E</span>
+        <span>C</span>
+        <span>I</span>
+        <span>P</span>
+        <span>E</span>
+        <br/>
+        <span>B</span>
+        <span>O</span>
+        <span>O</span>
+        <span>K</span>
+      </h1>
       <form onSubmit={getSearch} className="search-form">
         <input
           className="search-bar"
